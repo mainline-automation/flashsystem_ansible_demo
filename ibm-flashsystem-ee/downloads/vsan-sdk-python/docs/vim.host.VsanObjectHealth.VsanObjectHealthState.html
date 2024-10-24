@@ -1,0 +1,118 @@
+<html xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:vim2="urn:vim2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<script src="./commonRes.js" language="JavaScript"> type="text/javascript"></script>
+<link href="doc-style.css" type="text/css" rel="StyleSheet">
+</head>
+<script src="dynamic-content.js" type="text/javascript"></script>
+<body>
+<table cellspacing="0" class="header-footer" id="top">
+<tr>
+<td>
+<br>
+</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a href="index-mo_types.html">Managed Object Types</a></td><td><a href="index-do_types.html">Data Object Types</a></td><td><a href="index-properties.html">All Properties</a></td><td><a href="index-methods.html">All Methods</a></td>
+</tr>
+</table>
+<br>
+<a id="vim.host.VsanObjectHealth.VsanObjectHealthState" name="vim.host.VsanObjectHealth.VsanObjectHealthState"></a>
+<h1>Enum - 
+						VsanObjectHealthVsanObjectHealthState(vim.host.VsanObjectHealth.VsanObjectHealthState)</h1>
+<dl>
+<dt>Since </dt>
+<dd>vSphere API 5.5</dd>
+<p></p>
+</dl>
+<br>
+<h2>Enum Description</h2>
+<p></p>
+         The vSAN object health state enumeration.
+      <p></p>
+<a id="field_detail" name="field_detail"></a>
+<p class="table-title">Enum Constants</p>
+<table cellspacing="0">
+<tr>
+<th>Name</th><th>Description</th>
+</tr>
+<tr class="r1">
+<td><a id="datamove" name="datamove"></a>datamove</td><td>
+      Objects in this state are fully compliant with their policy and are healthy, but vSAN is actively rebuilding them.
+   <br>
+</td>
+</tr>
+<tr class="r0">
+<td><a id="healthy" name="healthy"></a>healthy</td><td>
+<br>
+</td>
+</tr>
+<tr class="r1">
+<td><a id="inaccessible" name="inaccessible"></a>inaccessible</td><td>
+<br>
+</td>
+</tr>
+<tr class="r0">
+<td><a id="nonavailabilityrelatedincompliance" name="nonavailabilityrelatedincompliance"></a>nonavailabilityrelatedincompliance</td><td>
+      The object is not compliant with its policy, but is meeting the availability (NumberOfFailuresToTolerate) policy.
+   <br>
+</td>
+</tr>
+<tr class="r1">
+<td><a id="nonavailabilityrelatedreconfig" name="nonavailabilityrelatedreconfig"></a>nonavailabilityrelatedreconfig</td><td>
+      The object is fully in compliance with the NumberOfFailuresToTolerate policy and the data movement is to satisfy another policy change.
+   <br>
+</td>
+</tr>
+<tr class="r0">
+<td><a id="reducedavailabilitywithactiverebuild" name="reducedavailabilitywithactiverebuild"></a>reducedavailabilitywithactiverebuild</td><td>
+      The object has suffered a failure, but it was configured to be able to tolerate the failure.
+   <br>
+</td>
+</tr>
+<tr class="r1">
+<td><a id="reducedavailabilitywithnorebuild" name="reducedavailabilitywithnorebuild"></a>reducedavailabilitywithnorebuild</td><td>
+      The object has suffered a failure, but vSAN was able to tolerate it.
+   <br>
+</td>
+</tr>
+<tr class="r0">
+<td><a id="reducedavailabilitywithnorebuilddelaytimer" name="reducedavailabilitywithnorebuilddelaytimer"></a>reducedavailabilitywithnorebuilddelaytimer</td><td>
+      The object has suffered a failure, but vSAN was able to tolerate it. However, vSAN is not yet working on re-protecting the object, as it is waiting for the 60-minute (default) delay timer to expire before issuing the re-protect.
+   <br>
+</td>
+</tr>
+</table>
+<br>
+<a style="margin-bottom:10px; margin-top:10px; cursor:hand; cursor:pointer" onclick="resize_textarea('wsdl-textarea');expandcontent(this, 'wsdl-div')">Show WSDL type definition</a>
+<div class="switchcontent" id="wsdl-div">
+<textarea cols="20" rows="10" name="wsdl-textarea" wrap="off" readonly="1" id="wsdl-textarea">         <simpleType xmlns="http://www.w3.org/2001/XMLSchema" xmlns:vsan="urn:vsan" name="VsanObjectHealthVsanObjectHealthState">
+            <restriction base="xsd:string">
+               <enumeration value="inaccessible"/>
+               <enumeration value="reducedavailabilitywithnorebuild"/>
+               <enumeration value="reducedavailabilitywithnorebuilddelaytimer"/>
+               <enumeration value="reducedavailabilitywithactiverebuild"/>
+               <enumeration value="datamove"/>
+               <enumeration value="nonavailabilityrelatedreconfig"/>
+               <enumeration value="nonavailabilityrelatedincompliance"/>
+               <enumeration value="healthy"/>
+            </restriction>
+         </simpleType></textarea>
+</div>
+<br>
+<br>
+<table cellspacing="0" class="header-footer" id="bottom">
+<tr>
+<td><a href="#top">Top of page</a></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><a href="index-mo_types.html">Managed Object Types</a></td><td><a href="index-do_types.html">Data Object Types</a></td><td><a href="index-properties.html">All Properties</a></td><td><a href="index-methods.html">All Methods</a></td>
+</tr>
+</table>
+<br>
+<script language="javascript">document.write(ID_Copyright);</script>
+<br>
+<script language="javascript">document.write(ID_VersionInformation);</script>
+</body>
+</html>

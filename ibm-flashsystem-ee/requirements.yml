@@ -1,0 +1,8 @@
+collections:
+  - ansible.posix
+  - ansible.controller
+  - community.general
+  - community.crypto
+  - community.vmware
+  - ibm.storage_virtualize
+  - irw.storage_virtualize

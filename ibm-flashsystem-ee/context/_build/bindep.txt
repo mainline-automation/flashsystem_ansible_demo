@@ -1,0 +1,5 @@
+gcc [platform:rpm]
+python3 [platform:rpm]
+git [platform:rpm]
+
+

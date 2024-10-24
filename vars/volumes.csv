@@ -1,0 +1,6 @@
+name,volume_state,pool,size,thin,unit,host_state,os,hostname,host_fqdn,esx_datastore_name,esx_datastore_type,datastore_state
+ansible1,present,Pool_01,1024,True,gb,present,esx,esxlab,10.136.0.65,ansible1_esx,vmfs,present
+ansible2,absent,Pool_01,512,True,gb,present,esx,esxlab,10.136.0.65,ansible2_esx,vmfs,present
+ansible3,present,Pool_01,512,True,mb,present,aix,bpicaix04,,,,
+ansible4,present,Pool_01,512,false,mb,present,aix,bpicaix04,,,,
+ansible5,present,Pool_01,512,True,gb,present,esx,esxlab,10.136.0.65,ansible5_esx,vmfs,present

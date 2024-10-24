@@ -1,0 +1,7 @@
+{
+    "ansible.python.interpreterPath": "/bin/python",
+    "python.analysis.extraPaths": [
+        "./collections/ansible_collections/ibm/storage_virtualize/plugins/module_utils",
+        "./collections/ansible_collections/ibm/storage_virtualize/plugins/modules"
+    ]
+}
